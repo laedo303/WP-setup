@@ -1,5 +1,16 @@
 body {
+  font-family: 'FiraCode';
   background-color: $back;
   color: $text;
-  user-select: none;
+    display: grid;
+    transition: all .5s;
+    user-select: none;
+    background: linear-gradient(to bottom, rgb(89, 0, 255), rgb(0, 122, 192));
+}
+
+.image{
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-image: url(img/notOk.svg);
 }
