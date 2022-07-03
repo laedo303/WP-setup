@@ -11,7 +11,11 @@ module.exports = {
   mode,
   target,
   devtool,
-
+  devServer: {
+    port: 3000,
+    open: true,
+    hot: true, // если не будет обновляться в браузере - удалить!
+  },
   entry: path.resolve(__dirname, 'src', 'main.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
